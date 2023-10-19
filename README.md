@@ -1,10 +1,14 @@
 # ASLA
-## Türkçe (Turkish)
-Bu bir garip basit bir oyundur ama açıldığında bazı yan etkileri vardır. Tamamen kapatıldığında tüm yan etkileri gider. Garanti verMİyorum.
-
-UYARI: music değişkenini ayarlamak zorundasınız. Ve yönetici yetkilerine sahip olarak başlatmalısınız.
-## English (İngilizce)
-It's a strange simple game but it has some side effects when turned on. When you turn it off completely all the side effects go away. I can NOT guarantee it.
-
-WARNING: You must set up the music variable. And you must start as admin rights.
-##### Lisans / License: MIT
+## [Türkçe dilinde görüntülemek için buraya tıklayın.](https://github.com/MuKonqi/ASLA/blob/main/BENİOKU.md)
+### Description
+It's an annoying game-like script. Most of it was coded on a interactive board from 2012, with final edits done at home.
+### Dependencies
+* Windows 7 or newer
+* [Python 3.8 or newer](https://www.python.org/downloads/)
+* Tkinter
+* [Pip](https://pypi.org/)
+* playsound version 1.2.2: ```pip install playsound==1.2.2```
+### Usage
+Set up this variable for music file: music
+Set up this variable for language: lang
+##### License: MIT
