@@ -8,7 +8,4 @@ Sinir bozucu oyun benzeri bir betik. Çoğu 2012'den kalma bir etkileşimli taht
 * Tkinter
 * [Pip](https://pypi.org/)
 * playsound sürüm 1.2.2: ```pip install playsound==1.2.2``
-### Kullanım
-Bu değişkeni müzik dosyası için ayarlayın: music
-Bu değişkeni dil için ayarlayın: lang
 ##### Lisans: MIT

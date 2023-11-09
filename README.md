@@ -8,7 +8,4 @@ It's an annoying game-like script. Most of it was coded on a interactive board f
 * Tkinter
 * [Pip](https://pypi.org/)
 * playsound version 1.2.2: ```pip install playsound==1.2.2```
-### Usage
-Set up this variable for music file: music
-Set up this variable for language: lang
 ##### License: MIT
